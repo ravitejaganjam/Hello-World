@@ -1,0 +1,215 @@
+ Select * from UDS_ELEMENT
+ 
+ select * from UDS_GROUP
+ 
+ select * from UDS_MEMBER where uds_member_code=26
+ 
+ select * from UDS_ITEM where uds_member_code=26
+ 
+ select * from UDS_ATTRIBUTE
+ 
+ select * from UDS_ELEMENT_VIEW
+ 
+ select * from UDS_BASIC_DATA_TYPE
+ 
+ 
+ select * from BUSINESS_SCENARIO
+ 
+ 
+ Time package ---------
+ 
+ select * from mputitab where ticode=1 -- Time interval -- 00 to 9
+
+ select * from mputttab where ttcode=10 -- Tariff time -- peak,off peak
+ 
+ select * from MPUTDTAB where tdcode=5 -- Type of day -- sat to sun
+ 
+ select * from mputwtab where twcode=6 -- time package
+ 
+ select * from mpulktw2 where twcode=6 -- time package work 
+ 
+ select * from mpulktwm where twcode=6 -- Time package prod
+ 
+ select * from mputwvsd where twcode=6
+ 
+ Zone package-----
+ 
+ select * from mpuzntab ---- tariff zone
+ 
+ select * from mpuzotab ---- zone origin
+  
+ select * from mpuzptab ---- zone destination
+ 
+ select * from mpulkgvm ---- Zone packages with all links
+ 
+ select * from mpulkgv2 ---- zone package in work
+ 
+ select * from mpugvtab ---- zone package 
+ 
+ select * from mpugvvsd
+ 
+ Usage package -----
+ 
+ select * from mpuuptab
+ 
+ select * from mpulkupm
+ 
+ Rating package --------
+ 
+ select * from mpulkrim where Ricode=3
+ 
+ select * from mpuritab where Ricode=3
+ 
+ select * from RATE_PACK_CHARGE_QUANTITY where ricode=3
+ 
+  select * from UDC_LOGICAL_QUANTITY where logical_quantity_code=1
+ 
+ select * from MPSUMTAB where umcode=1
+ 
+ select * from RATE_PACK_USAGE_TYPE where ricode=3
+ 
+ select * from UDC_USAGE_TYPE_TABLE where usage_type_id=2
+ 
+ select * from RATE_PACK_ELEMENT where rate_pack_entry_id in (25,26)
+ 
+ select * from rate_pack_parameter_value where rate_pack_element_id in (25,26) order by 1 asc
+ 
+ select * from CONVERSION_MODULE
+ 
+ select * from CONVERSION_MODULE_PARAMETER where conversion_module_id=1
+ 
+ select * from UDC_CHARGEABLE_QUANTITY where CHARGEABLE_QUANTITY_UDMcode=5
+ 
+ select * from UDC_LOGICAL_QUANTITY where logical_quantity_code=1
+ 
+ select * from p
+ 
+
+ 
+ 
+ 
+ 
+ 
+ select * from BUSINESS_ENTITY
+ 
+
+ 
+select * from SERVICE_Class
+
+select * from SYSTEM_SCENARIO_DEFINITION where SYSTEM_SCENARIO_DEFINITION_id=1
+
+select * from SYSTEM_SCENARIO where SYSTEM_SCENARIO_DEFINITION_id=1
+
+select * from SYSTEM_SCENARIO_ACTION where SYSTEM_SCENARIO_DEFINITION_id=1
+
+select * from SYSTEM_SCENARIO_element
+
+
+
+select * from PREBUSINESS_SCENARIO
+
+select * from PREBUSINESS_SCENARIO_ITEM
+
+select * from PREBUSINESS_SCENARIO_PARTY
+
+select * from PREBUSINESS_SCENARIO_VERSION
+
+
+select * from DXL_PROFILE
+
+select * from DXL_ATTRIBUTE
+
+select * from DXL_ATTRIBUTE_UDR
+
+select * from DXL_RECORD_TYPE
+
+
+
+
+
+
+select * from rateplan where tmcode=20
+
+select * from rateplan_version where tmcode=20
+
+select * from mpdpltab
+
+select * from rateplan_hist where tmcode=20
+
+select * from rateplan_busunit where tmcode=20
+
+
+select * from UDC_USAGE_TYPE_TABLE
+
+
+select * from mpulktmm where tmcode=20
+
+select * from mpulktm2 where tmcode=20
+
+select * from mpulktm1 where tmcode=20
+
+select * from mpulktmb where tmcode=20
+
+select * from tariff_service_package where tmcode=20
+
+
+select * from mpusptab where spcode in (1,3)
+
+select * from mpulktm1
+
+
+select * from mpssvtab
+
+select * from mpulktmm
+
+select * from mpulknxv
+
+select * from mpusntab
+
+select * from mpulkpxn
+
+select * from mpdevtab
+
+select * from mpulknxc
+
+select * from DXL_SUB_PROFILE_ATTRIBUTE
+
+select * from DXL_RECORD_TYPE
+
+select * from DXL_SUB_PROFILE
+
+
+select * from mpuhftab
+
+select * from udr_lt
+
+select * from mpdrctab where RSPID='PRIH'
+
+select * from MPUERTAB
+
+select * from   
+
+
+
+
+select * from THSFTTAB  order by 1 desc
+
+select * from thsfttab
+
+select * from IMP_FILE_STATISTIC
+
+select * from IMP_FUNCTION_CONTROL
+
+select * from PRIH_STATISTICS
+
+select * from RIH_STATISTICS
+
+select * from BSCSPROJECT_ALL
+
+select * from UDR_KEY_HOME
+
+select * from mpulkrim
+
+select * from customer_all where customer_id=140 
+
+select * from customer_all where customer_id_high=140
